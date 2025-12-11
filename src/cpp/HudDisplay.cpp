@@ -37,7 +37,7 @@ void showHud(float leanDeg, float tempC, float hum, float aqi, float co2ppm, int
   display.print("%");
 
   // -------- TOP RIGHT: LEAN ANGLE --------
-  int angleX = 90;
+  int angleX = 100;
   int angleY = 5;
   
   display.setTextSize(2);

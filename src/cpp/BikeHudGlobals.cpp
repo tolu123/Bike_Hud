@@ -15,7 +15,7 @@ Adafruit_MPU6050 mpu;
 bool  mpuOk        = false;
 float leanOffset   = 0.0;
 float filteredLean = 0.0;
-const uint8_t MPU_MOTION_THRESHOLD = 10;
+const uint8_t MPU_MOTION_THRESHOLD = 7;
 
 // ---------- BME680 ----------
 Adafruit_BME680 bme;
@@ -38,3 +38,11 @@ const unsigned long leanInterval      = 100;
 const unsigned long envInterval       = 2000;
 const unsigned long batteryInterval   = 10000;
 const unsigned long DEEP_SLEEP_TIMEOUT = 30000;
+
+// ---------- PREFS ----------
+Preferences prefs;   // ⬅ NEW
+
+
+
+// ---------- FIRMWARE VERSION ----------
+const char* FW_VERSION = "1.2.1";   // <-- bump this when you do a new release
